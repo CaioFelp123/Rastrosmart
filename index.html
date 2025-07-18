@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>AgroTrace QR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📦 Sistema de Rastreabilidade Agro</h1>
+
+  <section>
+    <h2>Gerar QR Code</h2>
+    <input id="loteInput" type="text" placeholder="ID do lote ou descrição">
+    <button onclick="gerarQRCode()">Gerar</button>
+    <div id="qrcode"></div>
+  </section>
+
+  <section>
+    <h2>📷 Leitura de QR Code</h2>
+    <video id="preview"></video>
+    <p id="leituraTexto">Aguardando leitura...</p>
+  </section>
+
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
